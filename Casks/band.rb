@@ -1,13 +1,13 @@
 cask "band" do
-  version "0.33.0"
+  version "0.34.0"
 
   on_arm do
-    sha256 "4c918df9d3a31f87d282d669748b03db5d717770594fc9fbc161a1cd590c2bef"
+    sha256 "9402cab9088df1fb3f5594f2ae88804e2308c82c55041d0698d5f8e4d38c566e"
 
     url "https://github.com/band-app/band/releases/download/v#{version}/Band-#{version}-apple-silicon.dmg"
   end
   on_intel do
-    sha256 "e82ca65cc473bc6e4fa65935e2c1a19a7abacde7c286f6c63e9fc7fd3151c333"
+    sha256 "ef5cc2a05e74d0e6267e264063951fee916f2f58b8816115b9214cf30f47d520"
 
     url "https://github.com/band-app/band/releases/download/v#{version}/Band-#{version}-intel.dmg"
   end
