@@ -1,16 +1,9 @@
 cask "band" do
-  version "0.41.0"
+  version "0.42.0"
 
-  on_arm do
-    sha256 "5aa2cc75d068062a278ec2cf305153e2d7b011ec0631601fa120b430b2053405"
+  sha256 "f44754713e9a2a32125bb2137349e850fc7077c1a78791ad6afdcb658f378dbd"
 
-    url "https://github.com/band-app/band/releases/download/v#{version}/Band-#{version}-apple-silicon.dmg"
-  end
-  on_intel do
-    sha256 "61f9ded9399fc0751145a8c8491738567c767b5e9aa9d51126e0aa8accc9ff08"
-
-    url "https://github.com/band-app/band/releases/download/v#{version}/Band-#{version}-intel.dmg"
-  end
+  url "https://github.com/band-app/band/releases/download/v#{version}/Band-#{version}-apple-silicon.dmg"
 
   name "Band"
   desc "IDE-agnostic agent orchestrator"
@@ -21,6 +14,7 @@ cask "band" do
   # tells Homebrew not to manage upgrades -- hence no livecheck block, which
   # would only matter if brew upgrade owned the upgrade path.
   auto_updates true
+  depends_on arch: :arm64
   depends_on macos: :big_sur
 
   app "Band.app"
