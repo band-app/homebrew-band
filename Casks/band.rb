@@ -1,7 +1,7 @@
 cask "band" do
-  version "0.61.0"
+  version "0.62.0"
 
-  sha256 "7c1223df2bb2ca13e9b3c4415aa41456d66c05dcbff9892101ae567fe884c9ed"
+  sha256 "639ffecd38a6a4618b3f2af2ddced47fbde85a41ab18998ca316b80752080a0e"
 
   url "https://github.com/band-app/band/releases/download/v#{version}/Band-#{version}-apple-silicon.dmg"
 
